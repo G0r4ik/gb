@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GB Adviser</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#FIXME" class="header__logo-wrapper logo-wrapper">
+        <svg class="logo__image"><use href="./icons/sprite.svg#logo" /></svg>
+        <span class="logo__text">GB Adviser</span>
+      </a>
+      <div class="header__search">
+        <svg class="header__search-icon icon">
+          <use href="./icons/sprite.svg#search" />
+        </svg>
+        <input
+          class="header__search-input"
+          type="text"
+          placeholder="Поиск..." />
+      </div>
+      <div class="header__other">
+        <div class="header__chat-wrapper icon">
+          <svg class="header__chat-icon icon">
+            <use href="./icons/sprite.svg#chat" />
+          </svg>
+        </div>
+        <div class="header__notification-wrapper icon">
+          <svg class="header__notification icon">
+            <use href="./icons/sprite.svg#notification" />
+            <div class="header__notification-count">5</div>
+          </svg>
+        </div>
+        <div class="header__user">
+          <img src="./imgs/user.png" alt="user" class="header__user-img" />
+          <span class="header__user-text">Саша Смелая</span>
+          <svg class="header__user-chevron icon" aria-hidden="true">
+            <use href="./icons/sprite.svg#chevron" />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <aside class="m-sidebar">
+      <nav class="m-sidebar__nav">
+        <div class="m-sidebar__burger" id="burgerMenu">
+          <svg class="m-sidebar__burger-icon icon">
+            <use href="./icons/sprite.svg#burger-menu"
+          </svg>
+          <span class="m-sidebar__burger-text">Скрыть</span>
+        </div>
+        <ul class="m-sidebar__list">
+          <li class="m-sidebar__item">
+            <svg class="m-sidebar__item-icon icon" aria-hidden="true">
+              <use href="./icons/sprite.svg#home" />
+            </svg>
+            <a href="#FIXME" class="m-sidebar__link">Главная</a>
+          </li>
+          <li class="m-sidebar__item">
+            <svg class="m-sidebar__item-icon icon" aria-hidden="true">
+              <use href="./icons/sprite.svg#request" />
+            </svg>
+            <a href="#FIXME" class="m-sidebar__link">Запросы</a>
+            <span class="m-sidebar__notification">16</span>
+          </li>
+          <li class="m-sidebar__item">
+            <svg class="m-sidebar__item-icon icon" aria-hidden="true">
+              <use href="./icons/sprite.svg#notes" />
+            </svg>
+            <a href="#FIXME" class="m-sidebar__link">Заметки</a>
+          </li>
+          <li class="m-sidebar__item">
+            <svg class="m-sidebar__item-icon icon" aria-hidden="true">
+              <use href="./icons/sprite.svg#folder" />
+            </svg>
+            <a href="#FIXME" class="m-sidebar__link">Категории</a>
+          </li>
+          <li class="m-sidebar__item">
+            <svg class="m-sidebar__item-icon icon" aria-hidden="true">
+              <use href="./icons/sprite.svg#users" />
+            </svg>
+            <a href="#FIXME" class="m-sidebar__link">Пользователи</a>
+          </li>
+          <li class="m-sidebar__item">
+            <svg class="m-sidebar__item-icon icon" aria-hidden="true">
+              <use href="./icons/sprite.svg#statistic" />
+            </svg>
+            <a href="#FIXME" class="m-sidebar__link">Статистика</a>
+          </li>
+          <li class="m-sidebar__item">
+            <svg class="m-sidebar__item-icon icon" aria-hidden="true">
+              <use href="./icons/sprite.svg#star" />
+            </svg>
+            <a href="#FIXME" class="m-sidebar__link">Избранное</a>
+          </li>
+          <li class="m-sidebar__item">
+            <svg class="m-sidebar__item-icon icon" aria-hidden="true">
+              <use href="./icons/sprite.svg#community" />
+            </svg>
+            <a href="#FIXME" class="m-sidebar__link">Поддержка</a>
+          </li>
+        </ul>
+
+        <span class="m-sidebar__title-new-list">Информация</span>
+        <ul class="m-sidebar__list">
+          <li class="m-sidebar__item">
+            <svg class="m-sidebar__item-icon icon" aria-hidden="true">
+              <use href="./icons/sprite.svg#question-in-circle" />
+            </svg>
+            <a href="#FIXME" class="m-sidebar__link">База знаний</a>
+          </li>
+          <li class="m-sidebar__item">
+            <svg class="m-sidebar__item-icon icon" aria-hidden="true">
+              <use href="./icons/sprite.svg#update" />
+            </svg>
+            <a href="#FIXME" class="m-sidebar__link">Обновления</a>
+          </li>
+        </ul>
+
+        <span class="m-sidebar__title-new-list">Настройки</span>
+        <ul class="m-sidebar__list">
+          <li class="m-sidebar__item">
+            <svg class="m-sidebar__item-icon icon" aria-hidden="true">
+              <use href="./icons/sprite.svg#user" />
+            </svg>
+            <a href="#FIXME" class="m-sidebar__link">Профиль</a>
+          </li>
+          <li class="m-sidebar__item m-sidebar__item_active">
+            <svg class="m-sidebar__item-icon icon" aria-hidden="true">
+              <use href="./icons/sprite.svg#settings" />
+            </svg>
+            <a href="#FIXME" class="m-sidebar__link">Общие настройки</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="extra-nav">
+        <div class="extra-nav__go-back go-back">
+          <svg aria-hidden="true" class="extra-nav__go-back-icon">
+            <use href="./icons/sprite.svg#go-back"
+          </svg>
+          <span>Назад</span>
+        </div>
+        <h1 class="extra-nav__title">Настройки профиля</h1>
+
+        <ul class="extra-nav__list">
+          <li class="extra-nav__item extra-nav__item_active">
+            Первичная настройка
+          </li>
+          <li class="extra-nav__item">Профиль пользователя</li>
+          <li class="extra-nav__item">Изменение общих настроек</li>
+          <li class="extra-nav__item">Дополнительные возможности</li>
+          <li class="extra-nav__item">Отправка запросов</li>
+          <li class="extra-nav__item">Работа со стастистикой</li>
+        </ul>
+      </section>
+
+      <section class="main-content">
+        <div class="main-content__search-input-wrapper">
+          <svg class="icon main-content__input-search-icon">
+            <use href="./icons/sprite.svg#search"></use>
+          </svg>
+          <input
+            type="text"
+            placeholder="Поиск..."
+            class="main-content__search-input" />
+        </div>
+        <div class="main-content__inner">
+          <div class="main-content__content">
+            <h2 class="main-content__title">Первичная настройка</h2>
+            <p class="main-content__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio facilis minima necessitatibus ducimus illo sed quo
+              deserunt excepturi sunt non enim inventore aliquam esse asperiores
+              ea dolorem quibusdam labore quos facere iusto, obcaecati
+              doloremque aliquid est.
+            </p>
+
+            <div class="main-content__recomendation">
+              <div class="main-content__recomendation-start">Рекомендации:</div>
+              <p class="main-content__recomendation-text">
+                Lorem ipsum dolor sit, amet, consectetur adipisicing elit.
+                Fugiat.
+              </p>
+            </div>
+
+            <hr class="main-content__hr" />
+
+            <h2 class="main-content__title">Начало работы</h2>
+            <p class="main-content__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              sunt, iste animi, quia numquam, rerum veritatis itaque tempore
+              facilis repellendus harum reiciendis.
+            </p>
+            <ul class="main-content__list">
+              <li class="main-content__list-item">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Similique, doloribus, nulla. Soluta error repudiandae cumque
+                veniam fugiat, voluptatem repellat provident, pariatur.
+              </li>
+              <li class="main-content__list-item">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Similique, doloribus, nulla. Soluta error repudiandae cumque
+                veniam fugiat, voluptatem repellat provident, pariatur.
+              </li>
+              <li class="main-content__list-item">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Similique, doloribus, nulla. Soluta error repudiandae cumque
+                veniam fugiat, voluptatem repellat provident, pariatur.
+              </li>
+            </ul>
+
+            <hr class="main-content__hr" />
+
+            <h2 class="main-content__title">Дополнительная информация</h2>
+            <!-- FIXME -->
+            <div class="tabs main-content__tabs">
+              <div class="tab-headers">
+                <div
+                  class="tab-header tab-header_active"
+                  onclick="openTab(event, 'tab1')">
+                  Пункт 11
+                </div>
+                <div class="tab-header" onclick="openTab(event, 'tab2')">
+                  Пункт 10
+                </div>
+                <div class="tab-header" onclick="openTab(event, 'tab3')">
+                  Пункт 9
+                </div>
+              </div>
+              <div class="tab-content" id="tab1" style="display: block">
+                <p class="main-content__text">
+                  11. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio facilis minima necessitatibus ducimus illo sed quo
+                  deserunt excepturi sunt non enim inventore aliquam esse
+                  asperiores ea dolorem quibusdam est.
+                </p>
+                <p class="main-content__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, doloribus, nulla. Soluta error repudiandae cumque
+                  veniam fugiat.
+                </p>
+              </div>
+              <div class="tab-content" id="tab2" style="display: none">
+                <p class="main-content__text">
+                  10. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio facilis minima necessitatibus ducimus illo sed quo
+                  deserunt excepturi sunt non enim inventore aliquam esse
+                  asperiores ea dolorem quibusdam est.
+                </p>
+                <p class="main-content__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, doloribus, nulla. Soluta error repudiandae cumque
+                  veniam fugiat.
+                </p>
+              </div>
+              <div class="tab-content" id="tab3" style="display: none">
+                <p class="main-content__text">
+                  9. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio facilis minima necessitatibus ducimus illo sed quo
+                  deserunt excepturi sunt non enim inventore aliquam esse
+                  asperiores ea dolorem quibusdam est.
+                </p>
+                <p class="main-content__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, doloribus, nulla. Soluta error repudiandae cumque
+                  veniam fugiat.
+                </p>
+              </div>
+            </div>
+
+            <hr class="main-content__hr" />
+
+            <div class="main-content__is-useful is-article-useful">
+              <strong class="is-article-useful__title">
+                Вам помогла наша статья?
+              </strong>
+
+              <div class="is-article-useful__buttons">
+                <button class="is-article-useful__button">Да</button>
+                <button class="is-article-useful__button">Нет</button>
+              </div>
+              <small class="is-article-useful__count-helped">
+                50 людям помогла эта статья
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="main-content__mini-cards">
+          <aside class="main-content__mini-card mini-card">
+            <strong class="mini-card__title">Сообщетсво GB</strong>
+            <p class="mini-card__text">
+              Обращайтесь за помощью к членам сообщества, задавайте любые
+              вопросы и получайте ответы.
+            </p>
+            <a href="#" class="mini-card__link">Присоединиться к сообществу </a>
+          </aside>
+
+          <aside class="main-content__mini-card mini-card">
+            <strong class="mini-card__title">GB Connect</strong>
+            <p class="mini-card__text">
+              Пользуйтесь всеми возможностями GB. Пройдите регистрацию в GB
+              Connect.
+            </p>
+            <a href="#" class="mini-card__link"> Регистрация </a>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./index.js"></script>
+</html>
